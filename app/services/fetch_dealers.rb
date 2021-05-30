@@ -18,7 +18,7 @@ class FetchDealers
   end
 
   def call
-    response = HTTParty.get('https://fakerapi.it/api/v1/companies?_seed=1&_quantity=200')
+    response = HTTParty.get(ENV['DEALERS_API_SOURCE'])
 
     if response.code == 200
       Dealer.delete_all

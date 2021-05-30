@@ -1,4 +1,4 @@
-module API
+module Api
   module V1
     class DealersController < ApplicationController
       require 'httparty'

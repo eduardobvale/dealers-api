@@ -28,6 +28,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "vcr", "~> 6.0"
+  gem "dotenv", "~> 2.7"
+  gem "webmock", "~> 3.13"
 end
 
 group :development do
@@ -44,3 +47,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "httparty", "~> 0.18.1"
 
 gem "simple_command", "~> 0.1.0"
+
+gem "rspec-rails", "~> 5.0"
