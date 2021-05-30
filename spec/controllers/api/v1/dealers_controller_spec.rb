@@ -11,8 +11,9 @@ RSpec.describe "Dealers", type: :request do
 
   describe "GET /index" do
     it "returns http success" do
+      # act
       get "/api/v1/dealers"
-
+      # asset
       expect(response).to have_http_status(:success)
     end
   end

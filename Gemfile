@@ -49,3 +49,5 @@ gem "httparty", "~> 0.18.1"
 gem "simple_command", "~> 0.1.0"
 
 gem "rspec-rails", "~> 5.0"
+
+gem "simplecov", "~> 0.21.2", :group => :test
