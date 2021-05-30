@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  resources :dealers
+  namespace :api do
+    namespace :v1 do
+      resources :dealers
+    end
+  end
 end
